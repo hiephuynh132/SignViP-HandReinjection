@@ -1,0 +1,26 @@
+base_config: C5.4-A_base.yaml
+
+# Clean A4 rerun: only the frozen VAE differs from C5.4-A4.
+save_frozen_vae: true
+
+modules:
+  vae: ${oc.env:C5_14_VAE_PATH}/vae
+  apperance_encoder: ${oc.env:C5_14_INIT_PATH}/appearance_encoder
+  condition_encoder: ${oc.env:C5_14_INIT_PATH}/condition_encoder/model.bin
+  unet_additional_kwargs:
+    hamer_reinject_kwargs:
+      enabled: true
+      inject_mid: true
+      inject_up_second_highest: true
+      inject_up_highest: true
+
+grad:
+  vae: false
+  appearance_encoder: false
+  condition_encoder: false
+  hamer_reinjector: true
+
+perceptual_loss:
+  clip_model: ${oc.env:C5_14_CLIP_MODEL}
+  dino_model: ${oc.env:C5_14_DINO_MODEL}
+

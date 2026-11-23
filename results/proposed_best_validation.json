@@ -1,0 +1,8 @@
+{
+  "step": 282000,
+  "ssim": 0.8815501340171115,
+  "hand_ssim": 0.6735120841914899,
+  "nonhand_ssim": 0.8899799002824365,
+  "score": 0.8815501340171115,
+  "selection_metric": "global_ssim"
+}

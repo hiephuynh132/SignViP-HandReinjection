@@ -1,0 +1,21 @@
+# Install a compatible torch + torchvision CUDA build separately.
+# Source requirements, not a certified fresh-install lockfile.
+accelerate==1.2.1
+diffusers==0.32.1
+transformers==4.47.1
+omegaconf==2.3.0
+einops>=0.8.1
+einx>=0.3.0
+h5py>=3.10
+numpy
+opencv-python
+Pillow
+scipy
+scikit-image
+lpips
+tensorboard
+imageio-ffmpeg
+PyYAML
+safetensors>=0.6.2
+tqdm
+matplotlib

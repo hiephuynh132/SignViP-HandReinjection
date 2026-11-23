@@ -1,0 +1,17 @@
+Environment visible through the original workspace overlays on 2026-11-19.
+This is an inventory, not a guarantee of exact historical training environment
+or a certified fresh-install lockfile.
+
+Python base: python3
+Overlays: animatediff/.torch-cu128, animatediff/.signvip-deps, animatediff/.deps
+torch 2.7.1+cu128
+torchvision 0.22.1+cu128
+diffusers 0.32.1
+accelerate 1.2.1
+transformers 4.47.1
+numpy 2.2.6
+h5py 3.14.0
+omegaconf 2.3.0
+lpips 0.1.4
+safetensors 0.6.2
+tensorboard 2.20.0

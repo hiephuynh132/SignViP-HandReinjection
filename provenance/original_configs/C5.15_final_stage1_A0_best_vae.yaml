@@ -1,0 +1,23 @@
+base_config: C5.16_final_stage1_A4_unfreeze_unet_condition.yaml
+
+# C5.15: same C5.16 architecture/objective, but train only the reference
+# Appearance Encoder, base Condition Encoder, and HAMER A4 reinjection
+# adapters/gates. Keep the VAE and denoising U-Net frozen.
+grad:
+  vae: false
+  unet_2d: false
+  appearance_encoder: true
+  condition_encoder: true
+  hamer_reinjector: true
+  selected_unet_modules: []
+  selected_unet_name_patterns: []
+  selected_condition_encoder_name_patterns: []
+
+# Match the C5.20 selection rule: maximize balanced hand/non-hand SSIM.
+best_checkpoint:
+  metric: balanced_hand_nonhand_ssim
+  hand_weight: 0.5
+  nonhand_weight: 0.5
+
+early_stopping:
+  enabled: false

@@ -1,0 +1,602 @@
+[
+  {
+    "source": "signvip/models/__init__.py",
+    "destination": "signvip/models/__init__.py",
+    "bytes": 0,
+    "source_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "release_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "release_bytes": 0
+  },
+  {
+    "source": "signvip/models/appearance_encoder.py",
+    "destination": "signvip/models/appearance_encoder.py",
+    "bytes": 54668,
+    "source_sha256": "560a6b441237ad3dc1629ccd1a1c6724c80151b98393b82d108d1c649310d816",
+    "release_sha256": "560a6b441237ad3dc1629ccd1a1c6724c80151b98393b82d108d1c649310d816",
+    "release_bytes": 54668
+  },
+  {
+    "source": "signvip/models/attention.py",
+    "destination": "signvip/models/attention.py",
+    "bytes": 24761,
+    "source_sha256": "b5aa3e6cac4289da6a4162610b2b6fc642afd4b86b6557e2b7516339eab9d7bd",
+    "release_sha256": "b5aa3e6cac4289da6a4162610b2b6fc642afd4b86b6557e2b7516339eab9d7bd",
+    "release_bytes": 24761
+  },
+  {
+    "source": "signvip/models/condition_encoder.py",
+    "destination": "signvip/models/condition_encoder.py",
+    "bytes": 17861,
+    "source_sha256": "0a122ed98e654abc6afd46dddbcef9302fe27f3f1857c722852c38bcff073908",
+    "release_sha256": "0a122ed98e654abc6afd46dddbcef9302fe27f3f1857c722852c38bcff073908",
+    "release_bytes": 17861
+  },
+  {
+    "source": "signvip/models/controlnet.py",
+    "destination": "signvip/models/controlnet.py",
+    "bytes": 26110,
+    "source_sha256": "25463a8f86996c845774f18c2c8f7f0fbd9eb4f8959f8d1ef8d3e5802774e73d",
+    "release_sha256": "25463a8f86996c845774f18c2c8f7f0fbd9eb4f8959f8d1ef8d3e5802774e73d",
+    "release_bytes": 26110
+  },
+  {
+    "source": "signvip/models/embeddings.py",
+    "destination": "signvip/models/embeddings.py",
+    "bytes": 13198,
+    "source_sha256": "6253fb5803583e40b69ef1fd787852b954fde19f8932d6a2c4c6ff2624388d38",
+    "release_sha256": "6253fb5803583e40b69ef1fd787852b954fde19f8932d6a2c4c6ff2624388d38",
+    "release_bytes": 13198
+  },
+  {
+    "source": "signvip/models/hamer_reinjection.py",
+    "destination": "signvip/models/hamer_reinjection.py",
+    "bytes": 57716,
+    "source_sha256": "fd60667722ef86470b136c31271f6b1ea1de928bc05e7933da15134692bb41ae",
+    "release_sha256": "fd60667722ef86470b136c31271f6b1ea1de928bc05e7933da15134692bb41ae",
+    "release_bytes": 57716
+  },
+  {
+    "source": "signvip/models/hand_latent_refiner.py",
+    "destination": "signvip/models/hand_latent_refiner.py",
+    "bytes": 8883,
+    "source_sha256": "967a943e8f748e6a706a747ecc5b241f256e667e485fb0391431874409cc9a9d",
+    "release_sha256": "967a943e8f748e6a706a747ecc5b241f256e667e485fb0391431874409cc9a9d",
+    "release_bytes": 8883
+  },
+  {
+    "source": "signvip/models/hand_roi_refiner.py",
+    "destination": "signvip/models/hand_roi_refiner.py",
+    "bytes": 3887,
+    "source_sha256": "3f3819b7f0d5b8fc9f77be21fc8d0f53caa03ce3c018afdff8d337220c120c99",
+    "release_sha256": "3f3819b7f0d5b8fc9f77be21fc8d0f53caa03ce3c018afdff8d337220c120c99",
+    "release_bytes": 3887
+  },
+  {
+    "source": "signvip/models/motion_module.py",
+    "destination": "signvip/models/motion_module.py",
+    "bytes": 13396,
+    "source_sha256": "8d2c25e14fc0f784382b2a070c42065cd783ca7efa3ae3e2b2d7c7763c62966a",
+    "release_sha256": "8d2c25e14fc0f784382b2a070c42065cd783ca7efa3ae3e2b2d7c7763c62966a",
+    "release_bytes": 13396
+  },
+  {
+    "source": "signvip/models/multihead_t2vqpgpt.py",
+    "destination": "signvip/models/multihead_t2vqpgpt.py",
+    "bytes": 13505,
+    "source_sha256": "019cea2327ea6d8cd57cd8cffb0fca392a07dd3185de2a159bda9b890980bf32",
+    "release_sha256": "019cea2327ea6d8cd57cd8cffb0fca392a07dd3185de2a159bda9b890980bf32",
+    "release_bytes": 13505
+  },
+  {
+    "source": "signvip/models/mutual_self_attention.py",
+    "destination": "signvip/models/mutual_self_attention.py",
+    "bytes": 32721,
+    "source_sha256": "d5072a096d5fc41cca9eecf8c75c08a5f3c3338f4f3ba0ea2a6c81185a7686df",
+    "release_sha256": "d5072a096d5fc41cca9eecf8c75c08a5f3c3338f4f3ba0ea2a6c81185a7686df",
+    "release_bytes": 32721
+  },
+  {
+    "source": "signvip/models/orig_attention.py",
+    "destination": "signvip/models/orig_attention.py",
+    "bytes": 43318,
+    "source_sha256": "a03f13ba2bb780396e0c1a34185c310bab967d279146eb6219aa1a06190f9110",
+    "release_sha256": "a03f13ba2bb780396e0c1a34185c310bab967d279146eb6219aa1a06190f9110",
+    "release_bytes": 43318
+  },
+  {
+    "source": "signvip/models/pos_encoding.py",
+    "destination": "signvip/models/pos_encoding.py",
+    "bytes": 1444,
+    "source_sha256": "c2c9de79f86ffa938463d952f12adf341b3699b30f26e23c412c46bf5f803d50",
+    "release_sha256": "c2c9de79f86ffa938463d952f12adf341b3699b30f26e23c412c46bf5f803d50",
+    "release_bytes": 1444
+  },
+  {
+    "source": "signvip/models/resnet.py",
+    "destination": "signvip/models/resnet.py",
+    "bytes": 8478,
+    "source_sha256": "b001a3d04da375918286f397c9c182c0ac780da0ce09cb3b5c794a287fa63677",
+    "release_sha256": "b001a3d04da375918286f397c9c182c0ac780da0ce09cb3b5c794a287fa63677",
+    "release_bytes": 8478
+  },
+  {
+    "source": "signvip/models/rotary.py",
+    "destination": "signvip/models/rotary.py",
+    "bytes": 1929,
+    "source_sha256": "2a7a02ee708e9a9a7c111ad9abfa2123c88ffc0784bf9af60329a58e5bb4774b",
+    "release_sha256": "2a7a02ee708e9a9a7c111ad9abfa2123c88ffc0784bf9af60329a58e5bb4774b",
+    "release_bytes": 1929
+  },
+  {
+    "source": "signvip/models/sparse_attention.py",
+    "destination": "signvip/models/sparse_attention.py",
+    "bytes": 16508,
+    "source_sha256": "721e6a6bf96371fd6f209665d4eea03a20a8c79835b886a76459f9c2155719cd",
+    "release_sha256": "721e6a6bf96371fd6f209665d4eea03a20a8c79835b886a76459f9c2155719cd",
+    "release_bytes": 16508
+  },
+  {
+    "source": "signvip/models/sparse_t2vqpgpt.py",
+    "destination": "signvip/models/sparse_t2vqpgpt.py",
+    "bytes": 13317,
+    "source_sha256": "01010fa8bc49a19225eca74aac37c5f3c8ea061404606b3a96ceb74d528afdc4",
+    "release_sha256": "01010fa8bc49a19225eca74aac37c5f3c8ea061404606b3a96ceb74d528afdc4",
+    "release_bytes": 13317
+  },
+  {
+    "source": "signvip/models/stable_diffusion_controlnet_reference.py",
+    "destination": "signvip/models/stable_diffusion_controlnet_reference.py",
+    "bytes": 46446,
+    "source_sha256": "e7cc1224557d6b85c6782760b264425c23eedd590f55439f71e37c09131f78d9",
+    "release_sha256": "e7cc1224557d6b85c6782760b264425c23eedd590f55439f71e37c09131f78d9",
+    "release_bytes": 46446
+  },
+  {
+    "source": "signvip/models/unet.py",
+    "destination": "signvip/models/unet.py",
+    "bytes": 37550,
+    "source_sha256": "834db86464c43171bd8c6e38a7fa3cf1c115b24acf94b280b14908201f1bd9e0",
+    "release_sha256": "834db86464c43171bd8c6e38a7fa3cf1c115b24acf94b280b14908201f1bd9e0",
+    "release_bytes": 37550
+  },
+  {
+    "source": "signvip/models/unet_3d_blocks.py",
+    "destination": "signvip/models/unet_3d_blocks.py",
+    "bytes": 32025,
+    "source_sha256": "d168e4842d5ee4c385e3ef5fe78f2e3452eeebe66bed9372c4ffdc19c76230a6",
+    "release_sha256": "d168e4842d5ee4c385e3ef5fe78f2e3452eeebe66bed9372c4ffdc19c76230a6",
+    "release_bytes": 32025
+  },
+  {
+    "source": "signvip/models/unet_controlnet.py",
+    "destination": "signvip/models/unet_controlnet.py",
+    "bytes": 22619,
+    "source_sha256": "6814b903b8666dc5087940845aad29924768015698d0de85d462d3f01dedcc54",
+    "release_sha256": "6814b903b8666dc5087940845aad29924768015698d0de85d462d3f01dedcc54",
+    "release_bytes": 22619
+  },
+  {
+    "source": "signvip/models/vq/FSQ.py",
+    "destination": "signvip/models/vq/FSQ.py",
+    "bytes": 7477,
+    "source_sha256": "d941e365796f21a57a8167e8fc7bc6f039011162f328ae85c71a36d87e5cd6d0",
+    "release_sha256": "d941e365796f21a57a8167e8fc7bc6f039011162f328ae85c71a36d87e5cd6d0",
+    "release_bytes": 7477
+  },
+  {
+    "source": "signvip/models/vq/LFQ.py",
+    "destination": "signvip/models/vq/LFQ.py",
+    "bytes": 14653,
+    "source_sha256": "4c32ef05bed48964040cd4c13126ef34cf7af77897abb51997cd5f0e84dc4414",
+    "release_sha256": "4c32ef05bed48964040cd4c13126ef34cf7af77897abb51997cd5f0e84dc4414",
+    "release_bytes": 14653
+  },
+  {
+    "source": "signvip/models/vq/__init__.py",
+    "destination": "signvip/models/vq/__init__.py",
+    "bytes": 0,
+    "source_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "release_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "release_bytes": 0
+  },
+  {
+    "source": "signvip/models/vq/basic_vae.py",
+    "destination": "signvip/models/vq/basic_vae.py",
+    "bytes": 10503,
+    "source_sha256": "24e3faa4d95fb8d45388ab05b67b7e6c43c88bafa3fa1daf60a883afc5f30264",
+    "release_sha256": "24e3faa4d95fb8d45388ab05b67b7e6c43c88bafa3fa1daf60a883afc5f30264",
+    "release_bytes": 10503
+  },
+  {
+    "source": "signvip/models/vq/quantizer.py",
+    "destination": "signvip/models/vq/quantizer.py",
+    "bytes": 2607,
+    "source_sha256": "6e9714be37fa773c6536b7fbedcc83106fec6d0fd050db1dc6f21a6a8889b61a",
+    "release_sha256": "6e9714be37fa773c6536b7fbedcc83106fec6d0fd050db1dc6f21a6a8889b61a",
+    "release_bytes": 2607
+  },
+  {
+    "source": "signvip/models/vq/residual_vq.py",
+    "destination": "signvip/models/vq/residual_vq.py",
+    "bytes": 16865,
+    "source_sha256": "f328d9dc9401cc28c8b48ce6243dd270b9d95463d3ce847ebe1c4ac3d719f220",
+    "release_sha256": "f328d9dc9401cc28c8b48ce6243dd270b9d95463d3ce847ebe1c4ac3d719f220",
+    "release_bytes": 16865
+  },
+  {
+    "source": "signvip/models/vq/vector_quantize_pytorch.py",
+    "destination": "signvip/models/vq/vector_quantize_pytorch.py",
+    "bytes": 45559,
+    "source_sha256": "4cf7c4ac92cbe0bd05685e3ab9ba242deacf09e18032e272f38d93b10465c02f",
+    "release_sha256": "4cf7c4ac92cbe0bd05685e3ab9ba242deacf09e18032e272f38d93b10465c02f",
+    "release_bytes": 45559
+  },
+  {
+    "source": "signvip/train_stage1_multi_cond.py",
+    "destination": "signvip/train_stage1_multi_cond.py",
+    "bytes": 114835,
+    "source_sha256": "1c9f0061f98ef46631fde894b5dee2a9374318c6166de2b12c5a38ddbda3b349",
+    "release_sha256": "1c9f0061f98ef46631fde894b5dee2a9374318c6166de2b12c5a38ddbda3b349",
+    "release_bytes": 114835
+  },
+  {
+    "source": "signvip/train_vae_decoder_reconstruction.py",
+    "destination": "signvip/train_vae_decoder_reconstruction.py",
+    "bytes": 55028,
+    "source_sha256": "18b9e539baefd2b5e7468dba74dfdc16928a06152ffb8d0517e7d7303f452012",
+    "release_sha256": "18b9e539baefd2b5e7468dba74dfdc16928a06152ffb8d0517e7d7303f452012",
+    "release_bytes": 55028
+  },
+  {
+    "source": "signvip/eval_C5_1_full_test.py",
+    "destination": "signvip/eval_C5_1_full_test.py",
+    "bytes": 33265,
+    "source_sha256": "09a3c8d08acbcadf6238e3755091415210038e306a64bb47a0d3ca4cb246999c",
+    "release_sha256": "09a3c8d08acbcadf6238e3755091415210038e306a64bb47a0d3ca4cb246999c",
+    "release_bytes": 33265
+  },
+  {
+    "source": "signvip/perceptual_losses.py",
+    "destination": "signvip/perceptual_losses.py",
+    "bytes": 9443,
+    "source_sha256": "4a8245e766956729966a5df72f79e355299820242e5c70950cfee4ee4e776f6e",
+    "release_sha256": "0b4f1e2f405610f575ce92cb64af3acfdcd78b9c51df8096d5041e8ff31c373d",
+    "release_bytes": 9416
+  },
+  {
+    "source": "signvip/utils.py",
+    "destination": "signvip/utils.py",
+    "bytes": 16494,
+    "source_sha256": "5d8f4990c9860841e48b5a9badcb05bd81bfe3c2bb7521a358840c1e25acc75f",
+    "release_sha256": "5d8f4990c9860841e48b5a9badcb05bd81bfe3c2bb7521a358840c1e25acc75f",
+    "release_bytes": 16494
+  },
+  {
+    "source": "signvip/export_vae_training_state.py",
+    "destination": "signvip/export_vae_training_state.py",
+    "bytes": 2320,
+    "source_sha256": "c0b86833bdfe9617f0375449012aedc1707683ec2289aee3ae73ef92822c7303",
+    "release_sha256": "c0b86833bdfe9617f0375449012aedc1707683ec2289aee3ae73ef92822c7303",
+    "release_bytes": 2320
+  },
+  {
+    "source": "signvip/pipelines/pipeline_static.py",
+    "destination": "signvip/pipelines/pipeline_static.py",
+    "bytes": 31641,
+    "source_sha256": "7d7c77b47c7a6ef9b49096131031d52994ad52893f8c58bf64b6bf5fc1d94047",
+    "release_sha256": "7d7c77b47c7a6ef9b49096131031d52994ad52893f8c58bf64b6bf5fc1d94047",
+    "release_bytes": 31641
+  },
+  {
+    "source": "signvip/pipelines/context.py",
+    "destination": "signvip/pipelines/context.py",
+    "bytes": 2064,
+    "source_sha256": "9de64eacc868a649f25c9492cfb4d2d7266fdffc5a552f40798f531589d0d8e1",
+    "release_sha256": "9de64eacc868a649f25c9492cfb4d2d7266fdffc5a552f40798f531589d0d8e1",
+    "release_bytes": 2064
+  },
+  {
+    "source": "signvip/signdatasets/__init__.py",
+    "destination": "signvip/signdatasets/__init__.py",
+    "bytes": 940,
+    "source_sha256": "bec2fe25b343f0e7dba31f50b2174862830dcd3360223dec867da63af8810a7b",
+    "release_sha256": "bec2fe25b343f0e7dba31f50b2174862830dcd3360223dec867da63af8810a7b",
+    "release_bytes": 940
+  },
+  {
+    "source": "signvip/signdatasets/hdf5_sign_lang_video.py",
+    "destination": "signvip/signdatasets/hdf5_sign_lang_video.py",
+    "bytes": 26345,
+    "source_sha256": "7631e6ef0ea3f168a2f53b7997d07404c980092efdb2d2b944ae16abb1023a7d",
+    "release_sha256": "7631e6ef0ea3f168a2f53b7997d07404c980092efdb2d2b944ae16abb1023a7d",
+    "release_bytes": 26345
+  },
+  {
+    "source": "signvip/metrics/calculate_ssim.py",
+    "destination": "signvip/metrics/calculate_ssim.py",
+    "bytes": 5090,
+    "source_sha256": "387784be1eb3fde01b5e32e6739aafd2c5e613fe53865137b31248e10a789d24",
+    "release_sha256": "387784be1eb3fde01b5e32e6739aafd2c5e613fe53865137b31248e10a789d24",
+    "release_bytes": 5090
+  },
+  {
+    "source": "signvip/make_paper_figure4_c5_comparison.py",
+    "destination": "signvip/make_paper_figure4_c5_comparison.py",
+    "bytes": 8924,
+    "source_sha256": "f78b4f93f544bb54c829d2576ad32d95803c350d82e078d6f5094a813b8a97d9",
+    "release_sha256": "e9ff3d448d71b6527c3e48066007c789f1f49836bf90dadbcba1d3d063657a08",
+    "release_bytes": 8946
+  },
+  {
+    "source": "signvip/make_C5_1_vs_C5_16_hand_face_visual.py",
+    "destination": "signvip/make_C5_1_vs_C5_16_hand_face_visual.py",
+    "bytes": 9006,
+    "source_sha256": "21768b5b3c9fe75b2df6bb03d12cfad3297f92d934a22a0eaa5fab84f2c794b0",
+    "release_sha256": "0e4433b4e5f3b78f327b1e22ee9cb6c705ac7607eeeb140c5366b66ed679c702",
+    "release_bytes": 9024
+  },
+  {
+    "source": "autoencoder_used/eval_autoencoders_used.py",
+    "destination": "autoencoder_used/eval_autoencoders_used.py",
+    "bytes": 46940,
+    "source_sha256": "013722922b390a2b3770a2bd7431bb5a942f7d1bf8fb1e1507e424917261abd4",
+    "release_sha256": "013722922b390a2b3770a2bd7431bb5a942f7d1bf8fb1e1507e424917261abd4",
+    "release_bytes": 46940
+  },
+  {
+    "source": "autoencoder_used/visualize_sd15_vae_middle_hand_face.py",
+    "destination": "autoencoder_used/visualize_sd15_vae_middle_hand_face.py",
+    "bytes": 8768,
+    "source_sha256": "6862ddc3b5b73ec5ffc33a0b20af190d148853801d95782fa1d310a9e0983691",
+    "release_sha256": "6862ddc3b5b73ec5ffc33a0b20af190d148853801d95782fa1d310a9e0983691",
+    "release_bytes": 8768
+  },
+  {
+    "source": "signvip/requirements.txt",
+    "destination": "requirements.upstream.txt",
+    "bytes": 570,
+    "source_sha256": "dbbeaf2709f4d1b913918bab1b5735bbf28941a4db5d7832c6522717e4eedc91",
+    "release_sha256": "dbbeaf2709f4d1b913918bab1b5735bbf28941a4db5d7832c6522717e4eedc91",
+    "release_bytes": 570
+  },
+  {
+    "source": "LICENSE",
+    "destination": "licenses/SignGen-MIT.txt",
+    "bytes": 1070,
+    "source_sha256": "492be3f0fc68a07caf0f926b436aedab831c764e022def4a4a9dc9e9e0840be7",
+    "release_sha256": "492be3f0fc68a07caf0f926b436aedab831c764e022def4a4a9dc9e9e0840be7",
+    "release_bytes": 1070
+  },
+  {
+    "source": "animatediff/LICENSE.txt",
+    "destination": "licenses/AnimateDiff-LICENSE.txt",
+    "bytes": 11357,
+    "source_sha256": "c71d239df91726fc519c6eb72d318ec65820627232b2f796219e87dcf35d0ab4",
+    "release_sha256": "c71d239df91726fc519c6eb72d318ec65820627232b2f796219e87dcf35d0ab4",
+    "release_bytes": 11357
+  },
+  {
+    "source": "DWPose/LICENSE",
+    "destination": "licenses/DWPose-LICENSE.txt",
+    "bytes": 11996,
+    "source_sha256": "ec5aa54eef312195c4494873a37158b19b0d523e25cec570189e6aa86289cf42",
+    "release_sha256": "ec5aa54eef312195c4494873a37158b19b0d523e25cec570189e6aa86289cf42",
+    "release_bytes": 11996
+  },
+  {
+    "source": "hamer/LICENSE.md",
+    "destination": "licenses/HaMeR-LICENSE.md",
+    "bytes": 1086,
+    "source_sha256": "04b9984691905594ec1757ec97f4cd939d87bea33f9aefc4bf9841b835392757",
+    "release_sha256": "04b9984691905594ec1757ec97f4cd939d87bea33f9aefc4bf9841b835392757",
+    "release_bytes": 1086
+  },
+  {
+    "source": "Grounded-SAM-2/LICENSE",
+    "destination": "licenses/Grounded-SAM2-LICENSE.txt",
+    "bytes": 11354,
+    "source_sha256": "2e4d1dce96fbe0eb02c44ddb6cb9e980e953f3590dd4f6b9ef6d7075252fb63d",
+    "release_sha256": "2e4d1dce96fbe0eb02c44ddb6cb9e980e953f3590dd4f6b9ef6d7075252fb63d",
+    "release_bytes": 11354
+  },
+  {
+    "source": "Grounded-SAM-2/LICENSE_sam2",
+    "destination": "licenses/SAM2-LICENSE.txt",
+    "bytes": 11357,
+    "source_sha256": "c71d239df91726fc519c6eb72d318ec65820627232b2f796219e87dcf35d0ab4",
+    "release_sha256": "c71d239df91726fc519c6eb72d318ec65820627232b2f796219e87dcf35d0ab4",
+    "release_bytes": 11357
+  },
+  {
+    "source": "Grounded-SAM-2/LICENSE_groundingdino",
+    "destination": "licenses/GroundingDINO-LICENSE.txt",
+    "bytes": 11354,
+    "source_sha256": "2e4d1dce96fbe0eb02c44ddb6cb9e980e953f3590dd4f6b9ef6d7075252fb63d",
+    "release_sha256": "2e4d1dce96fbe0eb02c44ddb6cb9e980e953f3590dd4f6b9ef6d7075252fb63d",
+    "release_bytes": 11354
+  },
+  {
+    "source": "sign_language_convert.py",
+    "destination": "preprocessing/sign_language_convert.py",
+    "bytes": 51168,
+    "source_sha256": "66083d1ceec415bc76801c24fae4a3ba1a40badb1643b6b692b4c1de815ab9c4",
+    "release_sha256": "66083d1ceec415bc76801c24fae4a3ba1a40badb1643b6b692b4c1de815ab9c4",
+    "release_bytes": 51168
+  },
+  {
+    "source": "dwpose_keypoints.py",
+    "destination": "preprocessing/dwpose_keypoints.py",
+    "bytes": 10998,
+    "source_sha256": "11917c274244ee0e779ca8e9fa96274531999d8e40c990fd615d723bb07bbf21",
+    "release_sha256": "11917c274244ee0e779ca8e9fa96274531999d8e40c990fd615d723bb07bbf21",
+    "release_bytes": 10998
+  },
+  {
+    "source": "datasets/h5.py",
+    "destination": "preprocessing/datasets/h5.py",
+    "bytes": 14765,
+    "source_sha256": "036e7acc0f95c64c2ca3a84991369cec996f1f22d8d24aced7cf093c895a58e4",
+    "release_sha256": "3332fe318e54b971d0a8aa3360b4a8bf825cab64c8c8d42bc225256bc0f87bd5",
+    "release_bytes": 14394
+  },
+  {
+    "source": "build_dwpose_keypoint_cache.py",
+    "destination": "preprocessing/build_dwpose_keypoint_cache.py",
+    "bytes": 6570,
+    "source_sha256": "63a4388562379905fbc3a2f7cff054f3120455753bfc1ce42f85515f0a86a069",
+    "release_sha256": "ac991668570457a8674c78db91efa1cb0f9c817905c74ab226c772386f1edd96",
+    "release_bytes": 6542
+  },
+  {
+    "source": "data_center_crop.sh",
+    "destination": "preprocessing/data_center_crop.sh",
+    "bytes": 3900,
+    "source_sha256": "c64e083dd5f195bc93bf6cb634dec5dff56191775e912eb0e50cb2b1dd2d4ce4",
+    "release_sha256": "1068ac42ec9edb4da0aa2ac6772b124f2d1615b8e43c0cdf3bf03a3632dfd770",
+    "release_bytes": 3791
+  },
+  {
+    "source": "Grounded-SAM-2/grounded_sam2_local_demo.py",
+    "destination": "preprocessing/Grounded-SAM-2/grounded_sam2_local_demo.py",
+    "bytes": 53260,
+    "source_sha256": "b380c50a6ff525bf9d3d559d7483e6afb42c834063f111f60cd1d8e8e2ed4043",
+    "release_sha256": "430501ffdbcb17df62ac95af3dff4ead2cfda156d29ab8d739aa182629278938",
+    "release_bytes": 53232
+  },
+  {
+    "source": "hamer/generate_signvip_conditions.py",
+    "destination": "preprocessing/hamer/generate_signvip_conditions.py",
+    "bytes": 17729,
+    "source_sha256": "104c1b765b5d002e4b1d6bf9efee8c62d6c4c97140f21c8ea738c78722770a5e",
+    "release_sha256": "cdcf45684c6f681b5707047321fbe3839b5e6c7f9376c6b98124f92ca64a519a",
+    "release_bytes": 17646
+  },
+  {
+    "source": "hamer/verify_signvip_conditions.py",
+    "destination": "preprocessing/hamer/verify_signvip_conditions.py",
+    "bytes": 12843,
+    "source_sha256": "927431779e68a381dc83c8a3a3e0f8817995a18e6d693a5efd962f274fd50a73",
+    "release_sha256": "c882b40bc1ae8c2679c535133d1c1ae682feff125192e80c0c8b417f6f50654e",
+    "release_bytes": 12760
+  },
+  {
+    "source": "signvip/configs/stage1/C5.4-A_base.yaml",
+    "destination": "provenance/original_configs/C5.4-A_base.yaml",
+    "bytes": 3076,
+    "source_sha256": "fb50a5315a15445a1c14951e4a5dd3eb076cedfdec2089e2a920ff71c6c97c84",
+    "release_sha256": "351b2a84d6087bd951f87461891405d2e56acf7ac15abfe87c4b88d23667999b",
+    "release_bytes": 2883
+  },
+  {
+    "source": "signvip/configs/stage1/C5.14_stage1_A4_best_vae.yaml",
+    "destination": "provenance/original_configs/C5.14_stage1_A4_best_vae.yaml",
+    "bytes": 664,
+    "source_sha256": "22df43f84c153e635fec944f0706fac09a792a0f2b1eb00911177c1ea8c992a7",
+    "release_sha256": "22df43f84c153e635fec944f0706fac09a792a0f2b1eb00911177c1ea8c992a7",
+    "release_bytes": 664
+  },
+  {
+    "source": "signvip/configs/stage1/C5.16_final_stage1_A4_unfreeze_unet_condition.yaml",
+    "destination": "provenance/original_configs/C5.16_final_stage1_A4_unfreeze_unet_condition.yaml",
+    "bytes": 304,
+    "source_sha256": "885f303815f070f785b92fd9c5660c6d62c9c733735b94e04f1f25a54a88ab02",
+    "release_sha256": "885f303815f070f785b92fd9c5660c6d62c9c733735b94e04f1f25a54a88ab02",
+    "release_bytes": 304
+  },
+  {
+    "source": "signvip/configs/stage1/C5.15_final_stage1_A0_best_vae.yaml",
+    "destination": "provenance/original_configs/C5.15_final_stage1_A0_best_vae.yaml",
+    "bytes": 693,
+    "source_sha256": "82cf877c0e623e813f693b83c3d0dfe568febf19788925aab7bbd354761e69c5",
+    "release_sha256": "82cf877c0e623e813f693b83c3d0dfe568febf19788925aab7bbd354761e69c5",
+    "release_bytes": 693
+  },
+  {
+    "source": "signvip/configs/stage1/C5.13_vae_reconstruction_hand4x_face4x_clip_dino_lpips.yaml",
+    "destination": "provenance/original_configs/C5.13_vae_reconstruction_hand4x_face4x_clip_dino_lpips.yaml",
+    "bytes": 1509,
+    "source_sha256": "615731ba0867a0d609bac4d16b463fca30d1a34eee86eb88010867eb1d62cebd",
+    "release_sha256": "877078439fb2aaa903c409bc6dde60a03bdac2570ec02daef25ced7e6c39a91e",
+    "release_bytes": 1412
+  },
+  {
+    "source": "signvip/configs/stage1/C5.1_stage1_hdf5.yaml",
+    "destination": "provenance/original_configs/C5.1_stage1_hdf5.yaml",
+    "bytes": 2246,
+    "source_sha256": "b8e0bd8029b3aba540ebae03db5d78ca9b057ed41c988ad4baadb268382b9354",
+    "release_sha256": "9e058d789d43aab0450fe89c412060c3d57e588d1c62ce77e1eadb3fabcd4cc5",
+    "release_bytes": 2080
+  },
+  {
+    "source": "signvip/workspace_c5_15/C5.15_final_stage1_A0_best_vae/20260920-1230/config.yaml",
+    "destination": "provenance/paper_run_config.yaml",
+    "bytes": 3946,
+    "source_sha256": "3e7dd325beb305225ec2ccae1f0dabbbbb6751f61c27102a71fc23209649567e",
+    "release_sha256": "c5d92036e4ce282534a2f745fcac6654a9c4cfe4ab39c128476198699e28d663",
+    "release_bytes": 3537
+  },
+  {
+    "source": "signvip/workspace_c5_15/C5.15_final_stage1_A0_best_vae/20260920-1230/best/metrics.json",
+    "destination": "results/proposed_best_validation.json",
+    "bytes": 191,
+    "source_sha256": "5eb07a7898726cc56e569d35bd533256714f9a53debf6f4c895b490e1f586a14",
+    "release_sha256": "5eb07a7898726cc56e569d35bd533256714f9a53debf6f4c895b490e1f586a14",
+    "release_bytes": 191
+  },
+  {
+    "source": "signvip/workspace_resume/C5.13_vae_reconstruction_hand4x_face4x_clip_dino_lpips/20260903-1245/best/metrics.json",
+    "destination": "results/vae_best_validation.json",
+    "bytes": 744,
+    "source_sha256": "c9e2f971ba53f685b439ac0d14bb58dbe3cdadf62578e5d4400e3e9f35bd19c5",
+    "release_sha256": "c9e2f971ba53f685b439ac0d14bb58dbe3cdadf62578e5d4400e3e9f35bd19c5",
+    "release_bytes": 744
+  },
+  {
+    "source": "signvip/reports/C5.15_full_test_chunk5_matched_baseline/metrics_summary.json",
+    "destination": "results/proposed_full_test_metrics.json",
+    "bytes": 5096,
+    "source_sha256": "105ccf14d6df7c2af3b7267d1cfe3efb5948c4402ac035e645cc0e34ca143eee",
+    "release_sha256": "9a66edbc3ecc99de6f6af5757a5d6fafa736c5df3edc7137f00330fa0896c674",
+    "release_bytes": 4878
+  },
+  {
+    "source": "reports/IEEE-conference-template-062824/figures/ICEEIS_2026-proposal-method-fixed.png",
+    "destination": "assets/ICEEIS_2026-proposal-method-fixed.png",
+    "bytes": 762776,
+    "source_sha256": "425a7422a026cf27d189a72d1ec60fa54a0c3550543b6a28fe143f1ec4481ce8",
+    "release_sha256": "425a7422a026cf27d189a72d1ec60fa54a0c3550543b6a28fe143f1ec4481ce8",
+    "release_bytes": 762776
+  },
+  {
+    "source": "reports/IEEE-conference-template-062824/figures/ICEEIS_2026-Hand-Face-Mask-fixed.png",
+    "destination": "assets/ICEEIS_2026-Hand-Face-Mask-fixed.png",
+    "bytes": 323449,
+    "source_sha256": "e4b6426536fcfe82a67cd1e89c7aa4f33238edcd9a336518bcbdfc52cd065cd5",
+    "release_sha256": "e4b6426536fcfe82a67cd1e89c7aa4f33238edcd9a336518bcbdfc52cd065cd5",
+    "release_bytes": 323449
+  },
+  {
+    "source": "reports/IEEE-conference-template-062824/figures/sd15_vae_pretrained_128_grid.png",
+    "destination": "assets/sd15_vae_pretrained_128_grid.png",
+    "bytes": 430856,
+    "source_sha256": "1ef173316b2e595853c168da09c811654dba33fbefff76275f1ad0a2a303da7d",
+    "release_sha256": "1ef173316b2e595853c168da09c811654dba33fbefff76275f1ad0a2a303da7d",
+    "release_bytes": 430856
+  },
+  {
+    "source": "reports/IEEE-conference-template-062824/figures/optimized_vae_reconstruction_grid.png",
+    "destination": "assets/optimized_vae_reconstruction_grid.png",
+    "bytes": 410460,
+    "source_sha256": "3c5d84fccc0d9c8a37941faa3036225011c44f26bc841a5355bfcd2a289a33e8",
+    "release_sha256": "3c5d84fccc0d9c8a37941faa3036225011c44f26bc841a5355bfcd2a289a33e8",
+    "release_bytes": 410460
+  },
+  {
+    "source": "reports/IEEE-conference-template-062824/figures/figure4_qualitative_492_617_matched_1col_en.png",
+    "destination": "assets/figure4_qualitative_492_617_matched_1col_en.png",
+    "bytes": 820537,
+    "source_sha256": "26b3f2a35ba608ac9a1b13b3c673997ebee1b375c8b0b49bdf401478ec2875e9",
+    "release_sha256": "26b3f2a35ba608ac9a1b13b3c673997ebee1b375c8b0b49bdf401478ec2875e9",
+    "release_bytes": 820537
+  }
+]

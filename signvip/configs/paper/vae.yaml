@@ -1,0 +1,48 @@
+seed: 42
+weight_dtype: fp16
+pretrained_vae: ${oc.env:SD15_ROOT,../weights/stable-diffusion-v1-5}/vae
+workspace_root: ${oc.env:SIGNVIP_WORKSPACE_ROOT,../outputs/vae}
+experiment_name: C5.13_vae_reconstruction_hand4x_face4x_clip_dino_lpips
+dataset:
+  train_root: ${oc.env:DATA_ROOT,../data/rwth}/train
+  dev_root: ${oc.env:DATA_ROOT,../data/rwth}/dev
+  detail_mask_cache: ${oc.env:MASK_ROOT,../data/detail_masks}
+  image_size: 128
+dataloader:
+  batch_size: 8
+  num_workers: 4
+solver:
+  max_train_steps: 200000
+  learning_rate: 1.0e-06
+  warmup_steps: 200
+  max_grad_norm: 1.0
+  adam_beta1: 0.9
+  adam_beta2: 0.999
+  adam_weight_decay: 0.0
+  adam_epsilon: 1.0e-08
+loss:
+  charbonnier_eps: 0.001
+  global_weight: 1.0
+  hand_weight: 4.0
+  face_weight: 4.0
+  min_mask_pixels: 4
+perceptual_loss:
+  enabled: true
+  clip_model: ${oc.env:CLIP_MODEL,openai/clip-vit-large-patch14}
+  dino_model: ${oc.env:DINO_MODEL,facebook/dinov2-small}
+  crop_size: 128
+  crop_padding: 0.2
+  mask_threshold: 0.5
+  hand_clip_weight: 0.025
+  hand_dino_weight: 0.05
+  hand_lpips_weight: 0.05
+  face_clip_weight: 0.025
+  face_dino_weight: 0.05
+  face_lpips_weight: 0.05
+  gradient_checkpointing: true
+checkpointing_steps: 1000
+validation_steps: 500
+validation_max_batches: 64
+max_checkpoints: 2
+log_steps: 20
+log_validation_images: 4

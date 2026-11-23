@@ -1,0 +1,22 @@
+{
+  "step": 195000,
+  "loss": 0.5865620458498597,
+  "c5_12_loss": 0.32213525800034404,
+  "c5_11_loss": 0.3187941834330559,
+  "global_charbonnier": 0.02189360634656623,
+  "hand_charbonnier": 0.07224315049825236,
+  "face_charbonnier": 0.06430999364238232,
+  "face_charbonnier_weighted": 0.2572399745695293,
+  "hand_clip": 0.07248331798473373,
+  "hand_dino": 0.12231789575889707,
+  "hand_lpips_raw": 0.06682149280095473,
+  "hand_lpips_weighted": 0.0033410746909794398,
+  "face_clip": 0.07064105046447366,
+  "face_dino": 0.05669298232533038,
+  "face_lpips_raw": 0.05172282789135352,
+  "face_lpips_weighted": 0.0025861414414976025,
+  "valid_hand_frames": 498.0,
+  "valid_face_frames": 512.0,
+  "valid_hand_rois": 498.0,
+  "valid_face_rois": 512.0
+}

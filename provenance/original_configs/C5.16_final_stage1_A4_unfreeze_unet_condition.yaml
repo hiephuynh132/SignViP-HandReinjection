@@ -1,0 +1,10 @@
+base_config: C5.14_stage1_A4_best_vae.yaml
+
+# C5.14 setup with frozen appearance encoder and jointly trainable denoising U-Net,
+# base condition guider, and HAMER reinjection adapter/gates.
+grad:
+  vae: false
+  unet_2d: true
+  appearance_encoder: false
+  condition_encoder: true
+  hamer_reinjector: true

@@ -1,0 +1,59 @@
+seed: 42
+weight_dtype: fp16
+
+# Same independent SD1.5 VAE initialization protocol as C5.10-C5.12.
+pretrained_vae: ${oc.env:C5_1_SD15_PATH}/vae
+
+workspace_root: ${oc.env:SIGNVIP_WORKSPACE_ROOT,./workspace_resume}
+experiment_name: C5.13_vae_reconstruction_hand4x_face4x_clip_dino_lpips
+
+dataset:
+  train_root: data/rwth/train
+  dev_root: data/rwth/dev
+  detail_mask_cache: ./cache_grounded_sam2_face_hand_center_crop_128
+  image_size: 128
+
+dataloader:
+  batch_size: 8
+  num_workers: 4
+
+solver:
+  max_train_steps: 50000
+  learning_rate: 1.0e-6
+  warmup_steps: 200
+  max_grad_norm: 1.0
+  adam_beta1: 0.9
+  adam_beta2: 0.999
+  adam_weight_decay: 0.0
+  adam_epsilon: 1.0e-8
+
+loss:
+  charbonnier_eps: 1.0e-3
+  global_weight: 1.0
+  hand_weight: 4.0
+  # Face branch mirrors the existing hand branch.
+  face_weight: 4.0
+  min_mask_pixels: 4
+
+# Hand and face use the same crop expansion, resolution, and perceptual weights.
+perceptual_loss:
+  enabled: true
+  clip_model: ${oc.env:C5_13_CLIP_MODEL}
+  dino_model: ${oc.env:C5_13_DINO_MODEL}
+  crop_size: 128
+  crop_padding: 0.20
+  mask_threshold: 0.50
+  hand_clip_weight: 0.025
+  hand_dino_weight: 0.050
+  hand_lpips_weight: 0.050
+  face_clip_weight: 0.025
+  face_dino_weight: 0.050
+  face_lpips_weight: 0.050
+  gradient_checkpointing: true
+
+checkpointing_steps: 1000
+validation_steps: 500
+validation_max_batches: 64
+max_checkpoints: 2
+log_steps: 20
+log_validation_images: 4

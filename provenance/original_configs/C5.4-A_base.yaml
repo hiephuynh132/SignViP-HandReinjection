@@ -1,0 +1,132 @@
+seed: 42
+weight_dtype: fp16
+stage_init: true
+save_frozen_modules: true
+
+modules:
+  vae: ${oc.env:C5_1_SD15_PATH}/vae
+  unet_2d: ${oc.env:C5_1_SD15_PATH}/unet
+  scheduler: ${oc.env:C5_1_SD15_PATH}/scheduler
+  apperance_encoder: ${oc.env:C5_4A_INIT_PATH}/appearance_encoder
+  tokenizer: ${oc.env:C5_1_SD15_PATH}/tokenizer
+  text_encoder: ${oc.env:C5_1_SD15_PATH}/text_encoder
+  condition_encoder: ${oc.env:C5_4A_INIT_PATH}/condition_encoder/model.bin
+  hamer_reinjector:
+  empty_text_emb:
+  unet:
+  unet_additional_kwargs:
+    unet_use_cross_frame_attention: false
+    unet_use_temporal_attention: false
+    use_motion_module: false
+    hamer_reinject_kwargs:
+      hand_channels: 256
+      hidden_channels: 128
+      enabled: false
+      inject_mid: false
+      inject_up_second_highest: false
+      inject_up_highest: false
+      log_shapes: true
+      ratio_epsilon: 1.0e-6
+
+grad:
+  vae: false
+  unet_2d: false
+  appearance_encoder: true
+  text_encoder: false
+  condition_encoder: true
+  hamer_reinjector: false
+  selected_unet_modules: []
+
+gradient_checkpointing: false
+
+solver:
+  max_train_steps: 50000
+  gradient_accumulation_steps: 1
+  max_grad_norm: 1.0
+  optimizer:
+    use_8bit_adam: false
+    learning_rate: 5.0e-7
+    lr_new: 1.0e-4
+    lr_base: 5.0e-7
+    adam_beta1: 0.9
+    adam_beta2: 0.999
+    adam_weight_decay: 1.0e-2
+    adam_epsilon: 1.0e-8
+  lr_scheduler:
+    name: cosine
+    lr_warmup_steps: 200
+
+dataset:
+  format: hdf5
+  frame_size: [128, 128]
+  frame_scale: [1.0, 1.0]
+  frame_ratio: [1.0, 1.0]
+  roots:
+    - data/rwth/train
+  hamer_roots:
+    - data/hamer/train
+  detail_mask_cache: ./cache_grounded_sam2_face_hand_center_crop_128
+  detail_mask_split: train
+  detail_mask_strict: true
+  sample_rate: 1
+  num_frames: 1
+  ref_margin: 5
+  uncond_ratio: 1
+  mask_ratio: 0
+  mask_thershold: 0.85
+  skip_ratio: 0
+  sk_mask_ratio: 0.1
+  hamer_mask_ratio: 0.1
+  both_mask_ratio: 0
+
+dataloader:
+  batch_size: 8
+  num_workers: 4
+
+noise_scheduler_kwargs:
+  num_train_timesteps: 1000
+  beta_start: 0.00085
+  beta_end: 0.012
+  beta_schedule: scaled_linear
+  steps_offset: 1
+  clip_sample: false
+
+resume_from_checkpoint:
+checkpointing_steps: 1000
+valid_steps: 500
+max_ckpt: 2
+max_model: 1
+
+enable_zero_snr: false
+noise_offset: 0
+clip_skip: 1
+snr_gamma: 5
+
+# Exactly the C5.3 loss; this architecture ablation adds no loss term.
+roi_loss_mode: stableanimator_weighted
+hand_loss_weight: 1.0
+face_loss_weight: 1.0
+perceptual_loss:
+  enabled: true
+  clip_model: ${oc.env:C5_4A_CLIP_MODEL}
+  dino_model: ${oc.env:C5_4A_DINO_MODEL}
+  diffusion_weight: 1.0
+  clip_weight: 0.05
+  dino_weight: 0.05
+  decode_chunk_size: 2
+
+hamer_reinject:
+  log_interval: 100
+
+max_visible_frames: 0
+max_sin_pe_len: 1000
+
+validation_data:
+  root: data/rwth/dev
+  hamer_root: data/hamer/dev
+  prompt: ""
+  num_inference_steps: 20
+  guidance_scale: 3.5
+  max_eval_batches: 12
+
+report_to: tensorboard
